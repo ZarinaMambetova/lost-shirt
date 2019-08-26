@@ -19,3 +19,25 @@
   font-size: 16px;
   padding: 5px 10px;
 }
+
+.products__header {
+background: url('../images/bg/hero.jpg') center center / cover no-repeat;
+margin-bottom: 90px;
+}
+
+.lined-text--header {
+  font-size: 30px !important;
+}
+
+.header__image-pic {
+
+position: absolute;
+width: 40%;
+top: -5%;
+left: 52%;
+}
+
+.fade-slider__text--header {
+  left: 43%;
+  top: 5%;
+}

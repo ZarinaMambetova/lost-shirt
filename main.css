@@ -1,7 +1,8 @@
 @import "layout/fonts.css" ;
-@import "layout/sidebar.css" ;
-@import "layout/hero.css" ;
 @import "layout/header.css" ;
+@import "layout/sidebar.css" ;
+@import "layout/hamburger.css" ;
+@import "layout/hero.css" ;
 @import "layout/fade-slider.css" ;
 @import "layout/filter.css" ;
 @import "layout/products.css" ;
@@ -11,6 +12,7 @@
 @import "layout/button.css" ;
 @import "layout/extras.css" ;
 @import "layout/socials.css" ;
+@import "layout/tsherts-choice.css" ;
 
 :root {
   --yellow: #ffbc2f;
@@ -39,7 +41,7 @@ body {
   
 }
 
-.sections {
+.landing {
   background-color: #fcf5e6;
   margin-bottom: 650px;
   z-index: 10;
@@ -57,4 +59,4 @@ ul {
 
 ul > li {
   list-style: none;
-}
+} 

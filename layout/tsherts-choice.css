@@ -1,0 +1,10 @@
+.tsherts-choice {
+  display: flex;
+  flex: 1;
+  border: 5px solid var(--yellow);
+  position: relative;
+}
+
+.tsherts-choice__col-image {
+  background: var(--yellow);
+}
