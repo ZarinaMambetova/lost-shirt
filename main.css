@@ -13,6 +13,9 @@
 @import "layout/extras.css" ;
 @import "layout/socials.css" ;
 @import "layout/tsherts-choice.css" ;
+@import "layout/tsherts-opcions.css" ;
+@import "layout/size__btn.css" ;
+@import "layout/color__btn.css" ;
 
 :root {
   --yellow: #ffbc2f;
