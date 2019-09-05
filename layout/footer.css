@@ -1,11 +1,4 @@
-.footer {
 
-  position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 0;
-    top: 35%;
- }
  
 .footer__container {
   width: 1105px;

@@ -12,7 +12,6 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="landing">
         <header class="header products__header">
           <a href="" class="logo">
             <img src="./images/content/logos/logo-main.png" alt="Lost-shirt logo" class="logo__pic">
@@ -33,26 +32,26 @@
             <div class="mail__content">lostinspace@mail.ru</div>
           </a>
         </header>
-        <div class="container">
+        <div class="container container__products">
           <div class="tsherts-choice">
             <div class="tsherts-choice__col tsherts-choice__col-image">
-            <ul class="tsherts-choice__list">
-              <li class="tsherts-choice__item tsherts-choice__item--active">
-                <img src="./images/content/tshirts/tshirt_07.png" alt="tshert" class="tsherts-choice__img">
-              </li>
-              <li class="tsherts-choice__item">
-                <img src="./images/content/tshirts/tshirt_08.png" alt="tshert" class="tsherts-choice__img">
-              </li>
-              <li class="tsherts-choice__item">
-                <img src="./images/content/tshirts/tshirt_09.png" alt="tshert" class="tsherts-choice__img">
-              </li>
-              <li class="tsherts-choice__item">
-                <img src="./images/content/tshirts/tshirt_10.png" alt="tshert" class="tsherts-choice__img">
-              </li>
-              <li class="tsherts-choice__item">
-                <img src="./images/content/tshirts/tshirt_11.png" alt="tshert" class="tsherts-choice__img">
-              </li>
-            </ul>
+              <ul class="tsherts-choice__list">
+                <li class="tsherts-choice__item black">
+                  <img src="./images/content/tshirts/tshirt_07.png" alt="tshert" class="tsherts-choice__img">
+                </li>
+                <li class="tsherts-choice__item white">
+                  <img src="./images/content/tshirts/tshirt_08.png" alt="tshert" class="tsherts-choice__img">
+                </li>
+                <li class="tsherts-choice__item green" >
+                  <img src="./images/content/tshirts/tshirt_09.png" alt="tshert" class="tsherts-choice__img">
+                </li>
+                <li class="tsherts-choice__item blue">
+                  <img src="./images/content/tshirts/tshirt_10.png"  alt="tshert" class="tsherts-choice__img">
+                </li>
+                <li class="tsherts-choice__item red">
+                  <img src="./images/content/tshirts/tshirt_11.png"  alt="tshert" class="tsherts-choice__img">
+                </li>
+              </ul>
           </div>
           <div class="tsherts-choice__col">
             <div class="tsherts-opcions__info">
@@ -113,23 +112,23 @@
               </div>
             </div>
             <div class="tsherts-choice__color">
-              <div class="color__btn">
+              <div class="color__btn" data-filter="black" >
                 <input type="radio" name="color" value="black" id="black">
                 <label for="black" class="color__btn-radio color__btn-radio--black"></label>
               </div>
-              <div class="color__btn">
+              <div class="color__btn" data-filter="white" >
                 <input type="radio" name="color" value="white" id="white">
                 <label for="white" class="color__btn-radio color__btn-radio--white"></label>
               </div>
-              <div class="color__btn">
-                <input type="radio" name="color" value="green" id="green" checked>
+              <div class="color__btn color__btn--checked" data-filter="green" >
+                <input type="radio" name="color" value="green" id="green">
                 <label for="green" class="color__btn-radio color__btn-radio--green"></label>
               </div>
-              <div class="color__btn">
+              <div class="color__btn"  data-filter="blue">
                 <input type="radio" name="color" value="blue" id="blue">
-                <label for="blue" class="color__btn-radio color__btn-radio--blue"></label>
+                <label for="blue" class="color__btn-radio color__btn-radio--blue" data-filter="blue" ></label>
               </div>
-              <div class="color__btn">
+              <div class="color__btn" data-filter="red">
                 <input type="radio" name="color" value="red" id="red">
                 <label for="red" class="color__btn-radio color__btn-radio--red"></label>
               </div>
@@ -144,7 +143,7 @@
         <div class="information">
           <div class="container">
             <ul class="filter">
-              <li class="filter__item filter__item--active">
+              <li class="filter__item filter__item--active ">
                 <a href="#" data-filter="description" class="filter__link">Описание</a>
               </li>
               <li class="filter__item">
@@ -154,11 +153,11 @@
                 <a href="#" data-filter="delivery" class="filter__link">Условия доставки</a>
               </li>
               <li class="filter__item">
-                <a href="#" data-filter="about-brand" class="filter__link">О бренде</a>
+                <a href="#" data-filter="brand" class="filter__link">О бренде</a>
               </li>
             </ul>
             <ul class="information__list">
-              <li class="information__item">
+              <li class="information__item description">
                 <div class="information__item-col">
                   <ul class="desc__list">
                     <li class="desc__item">
@@ -205,15 +204,15 @@
                     </li>
                   </ul>
                 </div>
-                <div class="information__item-col">
-                  <div class="desc__item-text">
+                <div class="information__item-col desc information__item-col-right">
+                  <div class="desc__item_text">
                       Футболка из приятной ткани с качественным принтом, это одна из самых универсальных вещей 
                       в гардеробе. Она подойдет и для занятий спортом, и для прогулок, и для работы, если разрешен свободный дресс-код.
                   </div>
                 </div>
               </li>
-              <li class="information__item">
-                <div class="information__item-col">
+              <li class="information__item size-table">
+                <div class="information__item-col information__item-col--left ">
                   <div class="size-table__image">
                      <img src="./images/content/tshirts/tshirt_00.png" alt="Lost-shirt logo" class="size-table__image-pic">
                   </div>
@@ -233,18 +232,118 @@
                     </ol>
                   </div>
                 </div>
-                <div class="information__item-col">
-                  
+                <div class="information__item-col information__item-col--table">
+                  <table class="table-size">
+                    <tr>
+                      <td class="table-name table-name--color">Мужские</td>
+                      <td class="table-name--color"></td>
+                      <td class="table-name--color">XS</td>
+                      <td class="table-name--color">S</td>
+                      <td class="table-name--color">M</td>
+                      <td class="table-name--color">L</td>
+                      <td class="table-name--color">XL</td>
+                      <td class="table-name--color">2XL</td>
+                      <td class="table-name--color">3XL</td>
+                    </tr>
+                    <tr>
+                      <td>Размер RUS</td>
+                      <td></td>
+                      <td>44</td>
+                      <td>46</td>
+                      <td>48</td>
+                      <td>50</td>
+                      <td>52</td>
+                      <td>54L</td>
+                      <td>56</td>
+                    </tr>
+                    <tr>
+                      <td>Ширина, см</td>
+                      <td></td>
+                      <td>46</td>
+                      <td>48</td>
+                      <td>50</td>
+                      <td>52</td>
+                      <td>54</td>
+                      <td>56</td>
+                      <td>58</td>
+                    </tr>
+                    <tr>
+                      <td>Длина, см</td>
+                      <td></td>
+                      <td>65</td>
+                      <td>67</td>
+                      <td>68</td>
+                      <td>69</td>
+                      <td>74</td>
+                      <td>74</td>
+                      <td>74</td>
+                    </tr>
+                    <tr>
+                      <td class="table-name table-name--color">Женские</td>
+                      <td class="table-name--color">XXS</td>
+                      <td class="table-name--color">XS</td>
+                      <td class="table-name--color">S</td>
+                      <td class="table-name--color">M</td>
+                      <td class="table-name--color">L</td>
+                      <td class="table-name--color">XL</td>
+                      <td class="table-name--color">2XL</td>
+                      <td class="table-name--color">3XL</td>
+                    </tr>
+                    <tr>
+                      <td>Размер RUS</td>
+                      <td>42</td>
+                      <td>44</td>
+                      <td>46</td>
+                      <td>48</td>
+                      <td>50</td>
+                      <td>52</td>
+                      <td>54L</td>
+                      <td>56</td>
+                    </tr>
+                    <tr>
+                      <td>Ширина, см</td>
+                      <td>44</td>
+                      <td>46</td>
+                      <td>48</td>
+                      <td>50</td>
+                      <td>52</td>
+                      <td>54</td>
+                      <td>56</td>
+                      <td>58</td>
+                    </tr>
+                    <tr>
+                      <td>Длина, см</td>
+                      <td>61</td>
+                      <td>61</td>
+                      <td>62</td>
+                      <td>64</td>
+                      <td>64</td>
+                      <td>64</td>
+                      <td>64</td>
+                      <td>64</td>
+                    </tr>
+                    <tr>
+                      <td>Обхват груди, см</td>
+                      <td>68-76</td>
+                      <td>76-80</td>
+                      <td>80-84</td>
+                      <td>84-88</td>
+                      <td>88-92</td>
+                      <td>92-96</td>
+                      <td>96-100</td>
+                      <td>100-104</td>
+                    </tr>
+                  </table>
                 </div>
               </li>
-              <li class="information__item">
-                <div class="information__item-col">
+              <li class="information__item delivery">
+                <div class="information__item-col information__item-col--left">
                   <div class="delivery__image">
                     <img src="./images/content/logos/express.png" alt="Lost-shirt logo" class="size-table__image-pic">
                   </div>
                 </div>
-                <div class="information__item-col">
-                    <div class="delivery__text">
+                <div class="information__item-col information__item-col-right">
+                    <div class="desc__item_text">
                         Доставка по России и странам Ближнего Зарубежья (Украина, Белорусия, Молдавия, Польша, Эстония, Болгария, Румыния, Чехия, Словакия, Венгрия и т.д.), всего 400 руб.
                       <br>
                         Мы так же доставляем в США, Японию, Австралию, Англию, Италию, Испанию и т.д. , стоимость доставки около 600 руб.
@@ -253,14 +352,14 @@
                     </div>
                 </div>
               </li>
-              <li class="information__item">
-                <div class="information__item-col">
-                  <div class="delivery__image">
+              <li class="information__item brand">
+                <div class="information__item-col information__item-col--left">
+                  <div class="brand__image">
                     <img src="./images/content/logos/harley.png" alt="Lost-shirt logo" class="size-table__image-pic">
                   </div>
                 </div>
-                <div class="information__item-col">
-                    <div class="delivery__text">
+                <div class="information__item-col information__item-col-right">
+                    <div class="desc__item_text">
                       Марка Hurley основана на любви к океану с его постоянством в этом изменчивом мире. 
                       Она осуществляет мечты молодого поколения, сочетая музыку и искусство в дизайне одежды, обуви и аксессуаров. 
                       Наполненная духом пляжной культуры продукция Hurley предлагает новое восприятие комфорта и индивидуальности. 
@@ -270,8 +369,6 @@
               </li>
             </ul>
           </div>
-        </div>
-      </div>
       <footer class="footer">
         <div class="container footer__container">
           <nav class="site-menu">
@@ -393,6 +490,8 @@
         </div>
       </footer>
     </div>
-
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="scripts/tsherts-choice.js"></script>
+    <script src="scripts/filter-info.js"></script>
   </body>
 </html>

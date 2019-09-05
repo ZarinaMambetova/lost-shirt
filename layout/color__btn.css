@@ -61,7 +61,7 @@
 .color__btn-radio:hover:after {
   border-color: var(--yellow);
 }
-input[type="radio"]:checked+.color__btn-radio:after {
+.color__btn--checked {
   border-color: var(--yellow);
 }
 

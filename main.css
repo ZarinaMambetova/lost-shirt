@@ -16,6 +16,10 @@
 @import "layout/tsherts-opcions.css" ;
 @import "layout/size__btn.css" ;
 @import "layout/color__btn.css" ;
+@import "layout/information.css " ;
+@import "layout/desc__list.css " ;
+@import "layout/size-table.css " ;
+@import "layout/delivery.css " ;
 
 :root {
   --yellow: #ffbc2f;
@@ -41,8 +45,9 @@ body {
   min-width: 1440px;
   display: flex;
   flex-direction: column;
-  
 }
+
+
 
 .landing {
   background-color: #fcf5e6;
@@ -54,7 +59,9 @@ body {
   margin: 0 auto;
   width: 1310px;
 }
-
+.container__products {
+width: 1105px;
+}
 ul {
   margin: 0;
   padding: 0;
