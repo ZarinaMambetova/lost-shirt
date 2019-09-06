@@ -23,6 +23,8 @@
 .products__header {
 background: url('../images/bg/hero.jpg') center center / cover no-repeat;
 margin-bottom: 90px;
+  width: 1645px;
+  padding: 21px;
 }
 
 .lined-text--header {

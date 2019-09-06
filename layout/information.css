@@ -1,5 +1,9 @@
+.information {
+  margin-bottom: 90px;
+}
 .information__list {
   position: relative;
+  
 }
 .information__item {
 

@@ -20,6 +20,7 @@
 @import "layout/desc__list.css " ;
 @import "layout/size-table.css " ;
 @import "layout/delivery.css " ;
+@import "layout/brand.css " ;
 
 :root {
   --yellow: #ffbc2f;
